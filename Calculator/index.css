@@ -1,0 +1,61 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.calc {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -200px;
+  width: 200px;
+  padding: 5px;
+  border: 2px solid #383838;
+  border-radius: 5px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.butPad {
+  background: #c2bbba;
+  border: 1px solid black;
+  height: 50px;
+  width: 25%;
+  margin: 2px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.butPad:hover {
+  background: #dedad9;
+}
+
+.row:nth-of-type(1) span {
+  background: black;
+  height: 50px;
+  width: 100%;
+  margin: 0 0 5px 0;
+  color: white;
+  text-align: right;
+  padding: 15px 5px 0 0;
+  box-sizing: border-box;
+}
+
+.row:nth-of-type(2) .butPad.cancel {
+  width: 50%;
+}
+
+.row:nth-last-of-type(1) .zero {
+  width: 75%;
+}
+
+.row .butPad:last-child {
+  background: peru;
+}
